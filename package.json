@@ -1,21 +1,21 @@
 {
   "name": "auto_quiz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript code quiz that can be graded with Jest tests",
+  "author": "DarinDev1000",
+  "license": "MIT",
   "main": "quiz.js",
   "scripts": {
     "start": "node quiz.js",
     "test": "jest quiz.test.js",
     "init": "cp quiz_src/quiz.js.example quiz_src/quiz.js && cp quiz_src/quiz.test.js.example quiz_src/quiz.test.js",
-    "test-src": "jest quiz_src/quiz.test.js",
+    "test-answers": "jest quiz_src/quiz.test.js",
     "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DarinDev1000/auto_quiz.git"
   },
-  "author": "Darin",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DarinDev1000/auto_quiz/issues"
   },

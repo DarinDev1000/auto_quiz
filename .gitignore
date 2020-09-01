@@ -1,5 +1,7 @@
+# Ignore the node packages
 node_modules
 
+# Remove these if you want to commit the answer files
 quiz_src/quiz.js
 quiz_src/quiz.test.js
 quiz_src/quiz_src.js

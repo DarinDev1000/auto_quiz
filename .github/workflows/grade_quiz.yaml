@@ -1,3 +1,4 @@
+# This is a Github Action that runs on github
 name: Grade Quiz
 # This workflow is triggered on pushes to the repository.
 on: [push]
@@ -8,9 +9,13 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+    # Check out the porject
     - uses: actions/checkout@v2
+    # Setup node
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
+    # Install npm packages
     - run: npm ci
+    # Run the grading test script with jest
     - run: npm test

@@ -64,6 +64,4 @@ describe('Question 5', () => {
   test('should return true if n1 > n2, else false', () => {
     expect(quiz.q5(-8,-18)).toBe(true);
   });
-  
-
 });
