@@ -2,6 +2,8 @@
 
 This is an automatic grading javascript quiz template
 
+## Taking the quiz
+
 ### Installing
 
 ```shell
@@ -18,7 +20,7 @@ node quiz.js
 ### Grading the quiz
 
 ```shell
-npm test
+npm run test
 ```
 
 ----

@@ -5,9 +5,11 @@
   "main": "quiz.js",
   "scripts": {
     "start": "node quiz.js",
-    "test": "jest",
+    "test": "jest quiz.test.js",
+    
+    "init": "cp quiz_src/quiz.js.example quiz_src/quiz.js && cp quiz_src/quiz.test.js.example quiz_src/quiz.test.js",
     "test-src": "jest quiz_src/quiz.test.js",
-    "build": "jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
+    "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
   },
   "repository": {
     "type": "git",

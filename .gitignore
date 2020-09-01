@@ -1,1 +1,6 @@
 node_modules
+
+quiz_src/quiz.js
+quiz_src/quiz.test.js
+quiz_src/quiz_src.js
+quiz_src/quiz_src.test.js
