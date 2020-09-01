@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node quiz.js",
     "test": "jest",
-    "obfuscate": "jsobfuscate quiz_source.test.js > quiz.test.js"
+    "test-src": "jest quiz_src/quiz.test.js",
+    "build": "jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
   },
   "repository": {
     "type": "git",
