@@ -53,4 +53,5 @@ When ready, build the quiz with `npm run build`
 Now have students clone the repo you made and they can take the quiz!
 
 ---
-<https://regexr.com/>
+
+[Useful Regex Tool](https://regexr.com/)

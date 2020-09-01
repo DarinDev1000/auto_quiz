@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node quiz.js",
     "test": "jest quiz.test.js",
-    
     "init": "cp quiz_src/quiz.js.example quiz_src/quiz.js && cp quiz_src/quiz.test.js.example quiz_src/quiz.test.js",
     "test-src": "jest quiz_src/quiz.test.js",
     "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
@@ -22,8 +21,9 @@
   },
   "homepage": "https://github.com/DarinDev1000/auto_quiz#readme",
   "dependencies": {
-    "jest": "^26.4.2",
-    "js-obfuscator": "^0.1.4"
+    "jest": "^26.4.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "js-obfuscator": "^0.1.4"
+  }
 }
