@@ -34,7 +34,7 @@ Else: try again till your code is right
 
 ## Editing the quiz
 
-**Make your own quiz by using this [project as a template](https://github.com/DarinDev1000/auto_quiz/generate)**  
+**Make your own quiz by [using this project as a template](https://github.com/DarinDev1000/auto_quiz/generate)**  
 Give it your quiz name. This can be used for each quiz.
 
 ### Editing Installation
@@ -63,4 +63,6 @@ When ready, build the quiz with `npm run build`
 **Now have students clone the repo you made and they can take the quiz!**
 
 ----
+If you need to, you can fork this project and make your own template.
+
 Reference: [Useful Regex Tool](https://regexr.com/)
