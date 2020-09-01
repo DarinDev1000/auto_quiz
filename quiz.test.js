@@ -1,10 +1,69 @@
 const quiz = require('./quiz');
 
-test('q1 should be 5', () => {
-  expect(quiz.q1()).toBe(5);
+describe('Question 1', () => {
+  test('should be 5', () => {
+    expect(quiz.q1()).toBe(5);
+  });
 });
 
-test('q2 should be a + b', () => {
-  expect(quiz.q2(2, 3)).toBe(5);
+describe('Question 2', () => {
+  test('should be 2 + 3', () => {
+    expect(quiz.q2(2, 3)).toBe(5);
+  });
+  
+  test('should be 5 + 8', () => {
+    expect(quiz.q2(5, 8)).toBe(13);
+  });
+  
+  test('should be -7 + 7', () => {
+    expect(quiz.q2(-7, 7)).toBe(0);
+  });
 });
 
+describe('Question 3', () => {
+  test('should be sum of array', () => {
+    expect(quiz.q3([1,2,3,4,5])).toBe(15);
+  });
+  
+  test('should be sum of array', () => {
+    expect(quiz.q3([1,2,3,-4,6])).toBe(8);
+  });
+  
+  test('should be sum of array', () => {
+    expect(quiz.q3([1,2,3])).toBe(6);
+  });
+});
+
+describe('Question 4', () => {
+  test('should return name and email as string', () => {
+    expect(quiz.q4(
+      {id: 3, name: 'Darin', email: 'darin@emaildomain.com'}
+      )).toBe('Darin, darin@emaildomain.com');
+  });
+  
+  test('should return name and email as string', () => {
+    expect(quiz.q4(
+      {id: 3, name: 'CoolCoder', email: 'coolcoder@gmail.com'}
+      )).toBe('CoolCoder, coolcoder@gmail.com');
+  });
+});
+
+describe('Question 5', () => {
+  test('should return true if n1 > n2, else false', () => {
+    expect(quiz.q5(4,6)).toBe(false);
+  });
+  
+  test('should return true if n1 > n2, else false', () => {
+    expect(quiz.q5(1,0)).toBe(true);
+  });
+  
+  test('should return true if n1 > n2, else false', () => {
+    expect(quiz.q5(4000,80000)).toBe(false);
+  });
+  
+  test('should return true if n1 > n2, else false', () => {
+    expect(quiz.q5(-8,-18)).toBe(true);
+  });
+  
+
+});
