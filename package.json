@@ -1,0 +1,24 @@
+{
+  "name": "auto_quiz",
+  "version": "1.0.0",
+  "description": "Code quit that can be graded with Jest tests",
+  "main": "quiz.js",
+  "scripts": {
+    "start": "node quiz.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarinDev1000/auto_quiz.git"
+  },
+  "author": "Darin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DarinDev1000/auto_quiz/issues"
+  },
+  "homepage": "https://github.com/DarinDev1000/auto_quiz#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
