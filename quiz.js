@@ -5,7 +5,7 @@ function q1() {
   return 5;
   // end
 }
-console.log(q1());
+// console.log(q1());
 
 function q2(a, b) {
   // Write a function that will return the value of a + b
@@ -13,7 +13,7 @@ function q2(a, b) {
   return a + b;
   // end
 }
-console.log(q2(1, 2));
+// console.log(q2(1, 2));
 
 function q3(number_array) {
   // Write a function that sums all values in an array
@@ -25,7 +25,7 @@ function q3(number_array) {
   return sum;
   // end
 }
-console.log(q3([1,3,5,1]));
+// console.log(q3([1,3,5,1]));
 
 function q4(user) {
   // user is an object that has fields 'name' and 'email'
@@ -35,7 +35,7 @@ function q4(user) {
   return `${user.name}, ${user.email}`
   // end
 }
-console.log(q4({id: 3, name: 'Demo', email: 'example@gmail.com'}))
+// console.log(q4({id: 3, name: 'Demo', email: 'example@gmail.com'}))
 
 function q5(number1, number2) {
   // Return true if number1 is bigger than number2
@@ -44,7 +44,7 @@ function q5(number1, number2) {
   return (number1 > number2) ? true : false
   // end
 }
-console.log(q5(4, 2))
+// console.log(q5(4, 2))
 
 module.exports = {
   q1, q2, q3, q4, q5
