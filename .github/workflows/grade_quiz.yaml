@@ -7,8 +7,10 @@ jobs:
     name: Grade Quiz
     # This job runs on Linux
     runs-on: ubuntu-latest
-    steps:
-      - name: npm ci
-        run: 'npm ci'
-      - name: Run Grading Test
-        run: 'npm test'
+      steps:
+        - uses: actions/checkout@v2
+        - uses: actions/setup-node@v2
+          with:
+            node-version: '12'
+        - run: npm install
+        - run: npm test
