@@ -11,9 +11,7 @@ Javascript quiz template with automatic grading tests!
 * Clone this project
 * Open the `quiz.js` file
 * Write functions to return the correct answer
-* Use console.logs to debug your code
 * Run `node quiz.js` to run your code
-
 *Add console.logs for debugging while taking the quiz*
 
 ### Self Grading
@@ -125,5 +123,5 @@ describe('Question 42', () => {
 
 * Each question is enclosed in a describe function
 * Each question can have multiple test cases (different parameters)
-* Use `quiz.<function name>` for each test
-* For more details, look at [Jest](https://jestjs.io/docs/en/using-matchers)
+
+**For more details, look at [Jest Docs](https://jestjs.io/docs/en/using-matchers)**
