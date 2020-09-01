@@ -2,7 +2,7 @@
 function q1() {
   // Write a function that will return the number 5
   // start
-
+  return 5;
   // end
 }
 // console.log(q1());
@@ -10,7 +10,7 @@ function q1() {
 function q2(a, b) {
   // Write a function that will return the value of a + b
   // start
-
+  return a + b;
   // end
 }
 // console.log(q2(1, 2));
@@ -18,7 +18,11 @@ function q2(a, b) {
 function q3(number_array) {
   // Write a function that sums all values in an array
   // start
-  
+  let sum = 0;
+  for (const value of number_array) {
+    sum += value;
+  }
+  return sum;
   // end
 }
 // console.log(q3([1,3,5,1]));
@@ -28,7 +32,7 @@ function q4(user) {
   // Return the values of name an email 
   // in this format:  "Myname, email@email.com"
   // start
-  
+  return `${user.name}, ${user.email}`
   // end
 }
 // console.log(q4({id: 3, name: 'Demo', email: 'example@gmail.com'}))
@@ -37,7 +41,7 @@ function q5(number1, number2) {
   // Return true if number1 is bigger than number2
   // Otherwise return false
   // start
-  
+  return (number1 > number2) ? true : false
   // end
 }
 // console.log(q5(4, 2))

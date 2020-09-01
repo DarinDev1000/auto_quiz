@@ -5,7 +5,8 @@
   "main": "quiz.js",
   "scripts": {
     "start": "node quiz.js",
-    "test": "jest"
+    "test": "jest",
+    "obfuscate": "jsobfuscate quiz_source.test.js > quiz.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,9 @@
     "url": "https://github.com/DarinDev1000/auto_quiz/issues"
   },
   "homepage": "https://github.com/DarinDev1000/auto_quiz#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^26.4.2"
-  }
+  "dependencies": {
+    "jest": "^26.4.2",
+    "js-obfuscator": "^0.1.4"
+  },
+  "devDependencies": {}
 }
