@@ -63,6 +63,67 @@ When ready, build the quiz with `npm run build`
 **Now have students clone the repo you made and they can take the quiz!**
 
 ----
+
 If you need to, you can fork this project and make your own template.
 
-Reference: [Useful Regex Tool](https://regexr.com/)
+References:  
+[Jest](https://jestjs.io/docs/en/using-matchers)  
+[Useful Regex Tool](https://regexr.com/)
+
+----
+
+## Details for editing the quiz
+
+If you want to commit the answer files in git, remove the quiz lines in the `.gitignore` file
+
+### Editing the quiz: `quiz_src/quiz.js`
+
+Add question functions in this format:
+
+```javascript
+function q42() {
+  // <The question>
+  // start
+  <correct code to the question>
+  return answer
+  // end
+}
+// console.log(q42());
+```
+
+* Don't forget to change the number for each question.
+* Make sure the answer code starts with '// start' and ends with '//end'. Otherwise the build script will not work correctly. Everything between is removed during the build.
+* The console.log is just for reference while taking the quiz
+
+Then at the bottom of the file, export each function:
+
+```javascript
+module.exports = {
+  q1, q2, q3, q4, q5, q42
+};
+```
+
+### Editing the quiz test: `quiz_src/quiz.test.js`
+
+Add test functions in this format:
+
+```javascript
+describe('Question 42', () => {
+  test('should be 21 * 2', () => {
+    expect(quiz.q42(21, 2)).toBe(42);
+  });
+
+  test('should be a * b', () => {
+    expect(quiz.q42(2, 2)).toBe(4);
+  });
+  
+  test('should be <answer>', () => {
+    expect(quiz.q42(<parameters_case_3>)).toBe(<answer>);
+  });
+});
+```
+
+* Each question is enclosed in a describe function
+* Each question can have multiple test cases (different parameters)
+* Use `quiz.<function name>` for each test
+* For more details, look at [Jest](https://jestjs.io/docs/en/using-matchers)
