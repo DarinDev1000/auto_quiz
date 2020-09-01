@@ -1,7 +1,7 @@
 # Auto Quiz
 
 *Author: DarinDev1000*  
-*Licence: MIT*
+*License: MIT*
 
 Javascript quiz template with automatic grading tests!
 
