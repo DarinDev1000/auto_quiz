@@ -1,7 +1,7 @@
 
 function q1() {
     // Write a function that will return the number 5
-    // start changed
+    // start
     return 5;
     // end
   }
