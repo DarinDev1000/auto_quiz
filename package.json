@@ -10,7 +10,8 @@
     "test": "jest quiz.test.js",
     "init": "cp quiz_src/quiz.js.example quiz_src/quiz.js && cp quiz_src/quiz.test.js.example quiz_src/quiz.test.js",
     "test-answers": "jest quiz_src/quiz.test.js",
-    "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js"
+    "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js",
+    "build-text": "node build_quiz.js && cp quiz_src/quiz.test.js > quiz.test.js"
   },
   "repository": {
     "type": "git",
