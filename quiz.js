@@ -1,4 +1,3 @@
-
 function q1() {
   // Write a function that will return the number 5
   // start
@@ -46,6 +45,7 @@ function q5(number1, number2) {
 }
 // console.log(q5(4, 2))
 
+// Export each function so the test can import them
 module.exports = {
   q1, q2, q3, q4, q5
 };
