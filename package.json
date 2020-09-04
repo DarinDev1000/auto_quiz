@@ -21,6 +21,9 @@
     "url": "https://github.com/DarinDev1000/auto_quiz/issues"
   },
   "homepage": "https://github.com/DarinDev1000/auto_quiz#readme",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "dependencies": {
     "jest": "^26.4.2"
   },
