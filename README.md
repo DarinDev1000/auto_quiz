@@ -3,9 +3,13 @@
 *Author: DarinDev1000*  
 *License: MIT*
 
-Javascript quiz template with automatic grading tests!
+Javascript learning quiz template with automatic self grading tests!
+
+This quiz is designed to continually try to get the right answer. (Self Graded)
 
 *Built for use at [Bay Valley Tech Code Academy](https://www.bayvalleytech.com/)*
+
+# Students -->
 
 ## Taking the quiz
 
@@ -30,6 +34,8 @@ Else: try again till your code is right
 *Pro Tip: Want to learn more Javascript?  Read the test and build files and learn how this project works!*
 
 ----
+
+# Teachers -->
 
 ## Editing the quiz
 
@@ -60,14 +66,6 @@ When ready, build the quiz with `npm run build`
 ## Giving the quiz
 
 **Now have students clone the repo you made and they can take the quiz!**
-
-----
-
-If you need to, you can fork this project and make your own template.
-
-References:  
-[Jest](https://jestjs.io/docs/en/using-matchers)  
-[Useful Regex Tool](https://regexr.com/)
 
 ----
 
@@ -126,3 +124,11 @@ describe('Question 42', () => {
 * Each question can have multiple test cases (different parameters)
 
 **For more details, look at [Jest Docs](https://jestjs.io/docs/en/using-matchers)**
+
+----
+
+If you need to, you can fork this project and make your own template.
+
+References:  
+[Jest](https://jestjs.io/docs/en/using-matchers)  
+[Useful Regex Tool](https://regexr.com/)
