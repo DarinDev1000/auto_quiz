@@ -28,8 +28,8 @@ function q3(number_array) {
 
 function q4(user) {
   // user is an object that has fields 'name' and 'email'
-  // Return the values of name an email 
-  // in this format:  "Myname, email@email.com"
+  // Return the values of name and email
+  // in this format: "Myname, email@email.com"
   // start
   return `${user.name}, ${user.email}`
   // end

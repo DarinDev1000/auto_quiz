@@ -7,7 +7,7 @@
   "main": "quiz.js",
   "scripts": {
     "start": "node quiz.js",
-    "test": "jest quiz.test.js",
+    "test": "jest --verbose --runTestsByPath ./quiz.test.js",
     "init": "cp quiz_src/quiz.js.example quiz_src/quiz.js && cp quiz_src/quiz.test.js.example quiz_src/quiz.test.js",
     "test-answers": "jest quiz_src/quiz.test.js",
     "build": "node build_quiz.js && jsobfuscate quiz_src/quiz.test.js > quiz.test.js",
@@ -22,12 +22,13 @@
   },
   "homepage": "https://github.com/DarinDev1000/auto_quiz#readme",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=16.15.1 || >= 18.7.0"
   },
   "dependencies": {
-    "jest": "^26.4.2"
+    "jest": "^28.1.3"
   },
   "devDependencies": {
+    "@types/jest": "^28.1.7",
     "js-obfuscator": "^0.1.4"
   }
 }
